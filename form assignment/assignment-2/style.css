@@ -1,0 +1,21 @@
+.forms {
+    border: solid grey 2px;
+    padding: 20px;
+    width: 600px;
+    margin: 0 auto;
+}
+label {
+    width: 100px;
+    display: block;
+    text-align: right;
+}
+.form {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+#notlabel {
+    width: 400px;
+    display: block;
+    text-align: left;
+}

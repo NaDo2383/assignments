@@ -1,0 +1,33 @@
+.forms {
+    border-radius: 10px;
+    border: solid grey 2px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 15rem;
+    margin:  0 auto;
+}
+.form {
+    margin-bottom: 10px;
+    display: flex;
+}
+.textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+button {
+    width: 9rem;
+    margin: 0 auto;
+}
+input {
+    width: 8.9rem;
+}
+label {
+    display: flex;
+    margin-right: 5px;
+}
+
