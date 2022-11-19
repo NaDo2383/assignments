@@ -1,0 +1,31 @@
+.container {
+    background-color: aqua;
+}
+
+.element {
+    border-top: 2px solid orangered;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.element:hover {
+    height: 100px;
+    background-color: orange;
+}
+
+p {
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+}
+
+p:hover {
+    font-size: 32px;
+}
