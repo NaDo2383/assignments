@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 300px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: grey;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    border: 1px solid black;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.circle {
+    /* display: block; */
+    /* position: absolute; */
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: white;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    border: 1px solid black;
+}
+
+input {
+    display: none;
+}
+
+
+input:checked+.container {
+    background-color: green;
+    justify-content: end;
+}
