@@ -1,0 +1,43 @@
+.hello-world {
+    background-color: darkgray;
+    color: white;
+    margin: 200px;
+    font-size: 50px;
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 0s; */
+}
+
+.shy {
+    position: absolute;
+    top: -23px;
+    right: -23px;
+    background-color: red;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transition: 1s;
+    transition-timing-function: linear; */
+}
+
+.hello-world:hover {
+    background-color: red;
+    transition: 1s;
+    transition-timing-function: linear;
+}
+
+.hello-world:hover .shy {
+    z-index: -1;
+    top: 50px;
+    left: 250px;
+    transition-property: right;
+}
