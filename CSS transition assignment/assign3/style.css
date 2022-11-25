@@ -2,9 +2,9 @@
     border: solid 2px black;
     width: 500px;
     height: 500px;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     position: relative;
 }
 
@@ -18,13 +18,13 @@
     align-items: center;
     position: absolute;
     z-index: 10;
-    transition-property: all;
-    transition-duration: 1s;
-    transition-delay: 0s;
+    transition: all 1s ease-in-out;
     transition-timing-function: inline;
 }
 
 .shape-2 {
+    right: 250px;
+    bottom: 250px;
     border-radius: 50%;
     width: 80px;
     height: 80px;
@@ -35,8 +35,9 @@
     position: absolute;
     z-index: 9;
     transition-property: bottom, right;
-    transition-duration: 1s, 1s;
-    transition-delay: 0s, 1s;
+    transition-duration: 1.5s, 1.5s;
+    transition-delay: 0s, 1.5s;
+    /* transition-timing-function: ease-in; */
 }
 
 .shape-3 {
@@ -49,8 +50,8 @@
     align-items: center;
     position: absolute;
     z-index: 8;
-    transition-property: all, all, all;
-    transition-duration: 1s, 1s, 1s;
+    transition-property: top, right, all;
+    transition-duration: 0.5s, 0.5s, 0.5s;
     transition-delay: 0s, 1s, 1s;
 }
 
