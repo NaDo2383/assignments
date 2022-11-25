@@ -17,21 +17,17 @@ p {
     color: aliceblue;
     font-size: 50px;
     transition-duration: 0.5s;
-    padding: 0 auto;
-
+    opacity: 0;
 }
 
 div {
     background-color: green;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transition-duration: 0.5s;
     height: 25%;
-}
-
-p {
-    visibility: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .aside:hover p {
@@ -45,13 +41,12 @@ p {
 
 }
 
-input:checked+p {
-    visibility: visible;
-}
-
 div:hover {
     background-color: azure;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+div:hover p {
+    background-color: azure;
+    font-size: 70px;
+    color: black;
 }
