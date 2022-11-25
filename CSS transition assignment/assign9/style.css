@@ -32,6 +32,10 @@ input {
     transition: all 1s;
 }
 
+i {
+    margin-left: 10px;
+}
+
 input:focus {
     width: 300px;
 }
