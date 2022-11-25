@@ -1,4 +1,4 @@
-.aside {
+section {
     width: 20%;
     height: 800px;
     background-color: black;
@@ -16,32 +16,42 @@ p {
     background-color: green;
     color: aliceblue;
     font-size: 50px;
-    height: 25%;
+    transition-duration: 0.5s;
+    padding: 0 auto;
+
+}
+
+div {
+    background-color: green;
     display: flex;
     align-items: center;
     justify-content: center;
     transition-duration: 0.5s;
+    height: 25%;
 }
 
 p {
-    display: none;
+    visibility: hidden;
 }
 
-/* input {
-    display: none;
-} */
-
-input:checked+.aside {
+.aside:hover p {
     width: 80%;
     opacity: 1;
 }
 
-input:checked+p {
-    display: block;
+.aside:hover {
+    width: 80%;
+    opacity: 1;
+
 }
 
-p:hover {
-    background-color: white;
-    color: green;
-    font-size: 70px;
+input:checked+p {
+    visibility: visible;
+}
+
+div:hover {
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

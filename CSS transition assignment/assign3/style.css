@@ -20,7 +20,7 @@
     z-index: 10;
     transition-property: all;
     transition-duration: 1s;
-    transition-delay: 1s;
+    transition-delay: 0s;
     transition-timing-function: inline;
 }
 
@@ -34,7 +34,7 @@
     align-items: center;
     position: absolute;
     z-index: 9;
-    transition-property: all, all;
+    transition-property: bottom, right;
     transition-duration: 1s, 1s;
     transition-delay: 0s, 1s;
 }
