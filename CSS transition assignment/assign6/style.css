@@ -24,7 +24,7 @@ p {
 }
 
 p {
-    visibility: hidden;
+    display: none;
 }
 
 /* input {
@@ -37,7 +37,7 @@ input:checked+.aside {
 }
 
 input:checked+p {
-    visibility: visible;
+    display: block;
 }
 
 p:hover {
