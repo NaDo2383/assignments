@@ -9,24 +9,25 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    /* transition-property: all;
+    transition-property: all;
     transition-duration: 1s;
-    transition-delay: 0s; */
+    transition-delay: 0s;
 }
 
 .shy {
-    position: absolute;
-    top: -23px;
-    right: -23px;
+    position: relative;
+    top: -50px;
+    right: -57px;
+    text-align: center;
     background-color: red;
     border-radius: 50%;
+    font-size: 40px;
     width: 50px;
     height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* transition: 1s;
-    transition-timing-function: linear; */
+    transition-property: right, top;
+    transition-duration: 0.5s, 0.3s;
+    transition-delay: 0s, 0.3s;
+    transition-timing-function: ease-in;
 }
 
 .hello-world:hover {
@@ -37,7 +38,6 @@
 
 .hello-world:hover .shy {
     z-index: -1;
-    top: 50px;
-    left: 250px;
-    transition-property: right;
+    top: 20px;
+    right: 150px;
 }
