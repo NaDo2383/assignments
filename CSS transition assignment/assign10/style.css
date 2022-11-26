@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 650px;
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: aquamarine;
+}
+
+.img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-image: url("https://i.picsum.photos/id/927/200/200.jpg?hmac=8gJRiqNVrPAFPg0IyGTTYxaPJBSoLOVg4elvGEPV30M");
+}
+
+.shadow {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+#shadow1 {
+    left: 0px;
+    top: 0px;
+    transition: all 1s;
+}
+
+#img1:hover #shadow1 {
+    width: 0px;
+    height: 0px;
+}
+
+#shadow2 {
+    left: 0px;
+    transition: all 1s;
+}
+
+#img2:hover #shadow2 {
+    width: 0px;
+}
+
+#shadow3 {
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+    transition: all 1s;
+}
+
+#img3:hover #shadow3 {
+    width: 0px;
+    height: 0px;
+}
+
+#shadow4 {
+    top: 0px;
+    position: absolute;
+    transition: all 1s;
+}
+
+#img4:hover #shadow4 {
+    height: 0px;
+}
+
+#shadow5 {
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+    transition: all 1s;
+}
+
+#img5:hover #shadow5 {
+    opacity: 0;
+}
+
+#shadow6 {
+    bottom: 0px;
+    position: absolute;
+    transition: all 1s;
+}
+
+#img6:hover #shadow6 {
+    height: 0px;
+}
+
+#shadow7 {
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    transition: all 1s;
+}
+
+#img7:hover #shadow7 {
+    width: 0px;
+    height: 0px;
+}
+
+#shadow8 {
+    right: 0px;
+    position: absolute;
+    transition: all 1s;
+}
+
+#img8:hover #shadow8 {
+    width: 0px;
+}
+
+#shadow9 {
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    transition: all 1s;
+}
+
+#img9:hover #shadow9 {
+    width: 0px;
+    height: 0px;
+}
