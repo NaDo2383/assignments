@@ -9,6 +9,8 @@
 }
 
 .container .shape-1 {
+    left: 170px;
+    top: 170px;
     border-radius: 50%;
     width: 80px;
     height: 80px;
@@ -41,6 +43,8 @@
 }
 
 .shape-3 {
+    right: 250px;
+    top: 170px;
     border-radius: 50%;
     width: 80px;
     height: 80px;
@@ -50,14 +54,16 @@
     align-items: center;
     position: absolute;
     z-index: 8;
-    transition-property: top, right, all;
-    transition-duration: 0.5s, 0.5s, 0.5s;
-    transition-delay: 0s, 1s, 1s;
+    transition-property: top, right, border-radius, background-color;
+    transition-duration: 1s, 1s, 1s, 0.5s, 0.5s;
+    transition-delay: 0s, 1s, 1s, 1s, 0.5s;
+    transition-timing-function: ease-in-out;
 }
 
 .hover-me {
-    align-self: flex-end;
-    justify-self: center;
+    position: absolute;
+    right: 250px;
+    bottom: 0px;
 }
 
 .container:hover .shape-1 {
